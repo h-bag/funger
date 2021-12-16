@@ -1,0 +1,28 @@
+html, body {
+    width: 250px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .button {
+    margin: 3% auto;
+    padding: 4px;
+    text-align: center;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .submit:hover {
+    background-color: #CFF2F2;
+  }
+  
+  .submit {
+    background-color: #E5F2F2;
+  }
+  
+  input {
+      margin:2px;
+  }

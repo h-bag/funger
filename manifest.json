@@ -6,15 +6,18 @@
     "description": "A browser extension for reporting copyright-infringing OpenSea NFTs.",
     "homepage_url": "https://github.com/h-bag/funger",
     "icons": {
-        "48": "placeholder.png"
+        "48": "icons/icon.png"
     },
 
-    "permissions":[
-        "activeTab"
+    "content_scripts": [
+        {
+            "matches": ["https://support.opensea.io/hc/en-us/requests/new?ticket_form_id=1500001421121"],
+            "js": ["funger.js"]
+        }
     ],
 
     "browser_action": {
-        "default_icon": "placeholder.png",
+        "default_icon": "icons/icon.png",
         "default_title": "Funger",
         "default_popup": "popup/report.html"
     }

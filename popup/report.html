@@ -7,8 +7,19 @@
     </head>
 
     <body>
-        <div id="popup-content">
-            <p>scrumbo</p>
+        <div id="popup-content" class="hidden">
+            <center>
+                <p style="margin-top:0;margin-bottom:0.5em;"><b>Funger</b></p>
+                <input id="email" name="email" size="30" placeholder="Your Email"/>
+                <input id="report_target" name="report_target" size="30" placeholder="Infringing OpenSea Listing (URL)"/>
+                <input id="ownership_proof" name="ownership_proof" size="30" placeholder="Proof of Authorship"/>
+                <input id="description" name="description" size="30" placeholder="Description"/>
+            </center>
+            <div class="button submit">Submit Report</div>
         </div>
+        <div id="error-content">
+            <p>Can't find an NFT to report.</p><p>Make sure you're on an OpenSea page.</p>
+        </div>
+        <script src="report.js"></script>
     </body>
 </html>
